@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Editable Title (1 línea, scroll horizontal si se pasa) -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <EditText
+            android:id="@+id/editorNoteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="0dp"
+            android:hint="@string/edit_note_note_title"
+            android:inputType="textCapSentences" />
+    </HorizontalScrollView>
+
+    <!-- Editable Description (1 línea, scroll horizontal si se pasa) -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <EditText
+            android:id="@+id/editorNoteDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:hint="@string/edit_note_note_description"
+            android:layout_marginHorizontal="20dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="0dp"
+            android:inputType="textCapSentences"/>
+    </HorizontalScrollView>
+
+    <!-- Cuerpo editable con scrolls -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <EditText
+                android:id="@+id/editorBodyInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:gravity="start|top"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:minLines="10"
+                android:minEms="40"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="20dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="0dp"
+                android:lineSpacingExtra="6dp"
+                android:overScrollMode="always"
+                android:scrollbars="vertical|horizontal"
+                android:hint="@string/note_editor_text_input_hint" />
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <!-- Botoncito salvador -->
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:text="@string/note_editor_save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

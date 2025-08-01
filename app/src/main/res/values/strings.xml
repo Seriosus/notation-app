@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">notation</string>
+    <string name="note_item_drop_to_delete_zone">Note item drop-to-delete zone</string>
+    <string name="add_note_plus_sign">+</string>
+    <string name="app_title_header">notation</string>
+    <string name="title_required_create_note">Title (required)</string>
+    <string name="description_optional_create_note">Description (optional)</string>
+    <string name="create_button_create_note">Create</string>
+    <string name="add_note_close">×</string>
+    <string name="add_note_header_title">Add note</string>
+    <string name="note_editor_text_input_hint">Here your note content (markdown supported)</string>
+    <string name="note_editor_save_button">Save</string>
+    <string name="note_preview_edit_button">Edit</string>
+    <string name="edit_note_note_description">Note description</string>
+    <string name="edit_note_note_title">Note title</string>
+    <string name="preview_note_note_body">Note content</string>
+    <string name="preview_note_note_description">Note description</string>
+    <string name="preview_note_note_title">Note title</string>
+</resources>
